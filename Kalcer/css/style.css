@@ -1,0 +1,65 @@
+/* Import Font Premium */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Skema Warna Hijau - Putih (Sesuai Halaman Login Anda) */
+  --green-dark:  #1a3a2a;      /* Hijau Gelap / Text utama */
+  --green-mid:   #2d6a4f;      /* Hijau Lapangan */
+  --green-field: #40916c;      /* Hijau Utama / Brand */
+  --green-light: #74c69d;      /* Hijau Muda Elemen */
+  --accent:      #f9c74f;      /* Kuning Emas Aksen */
+  --white:       #ffffff;      /* Putih Bersih */
+  --bg-light:    #f4f6f4;      /* Putih Abu-abu lembut untuk latar belakang */
+  --gray-text:   #6b7f74;      /* Abu-abu kehijauan untuk sub-text */
+  --radius:      12px;
+  --font:        'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-light);
+  color: var(--green-dark);
+  overflow-x: hidden;
+}
+
+/* Kustomisasi Navbar Atas */
+.navbar {
+  background-color: var(--green-dark) !important;
+  padding: 15px 0;
+  border-bottom: 2px solid var(--green-mid);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand span {
+  color: var(--accent);
+}
+
+/* Kustomisasi Tombol Utama (Button) */
+.btn-success {
+  background-color: var(--green-field) !important;
+  border-color: var(--green-field) !important;
+  border-radius: var(--radius);
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--green-mid) !important;
+  transform: translateY(-1px);
+}
+
+.btn-outline-light {
+  border-radius: var(--radius);
+  border: 1.5px solid var(--green-light);
+  color: var(--green-light);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+}
